@@ -64,6 +64,7 @@ ul {
     border: solid 1px #928a8a;
     border-radius: 6px;
     overflow: hidden;
+    transition: all 0.5s;
     background-color: wheat;
 }
 .card_image {
@@ -75,7 +76,7 @@ ul {
 .card__title {
     font-size: 20px;
     margin-bottom: 20px;
-    display:inline-block;
+    display:i nline-block;
     color:#333;
 }
 .card__date {
@@ -85,7 +86,6 @@ ul {
 }
 .card:hover{
     transform: scale(1.1);
-    transition: all 0.5s;
     cursor: pointer;
 }
 .card:hover a {
