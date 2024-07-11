@@ -36,7 +36,7 @@ a {
     margin-top: auto;
     font-size: 18px;
 }
-h2 {
+.card__title {
     color: #666;
     margin-top: 20px;
     font-size: 18px;
