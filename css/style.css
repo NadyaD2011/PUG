@@ -44,7 +44,7 @@ a {
 ul {
     list-style: none;
 }
-.conteiner {
+.container {
     width: 1070px;
     margin: auto;
     padding-top: 50px;
@@ -55,6 +55,7 @@ ul {
     justify-content: space-around;
 }
 .grid__item {
+    display: flex;
     width: 295px;
     margin-bottom: 25px;
 }
@@ -92,7 +93,7 @@ ul {
     color: brown;
 }
 @media (min-width: 480px) {
-    .conteiner{
+    .container{
         width: 90%;
     }
     .grid__item{
@@ -109,7 +110,7 @@ ul {
     .grid__item{
         flex-basis: 30%;
     }
-    .conteiner{
+    .container{
         width: 80%;
     }
 }
@@ -122,7 +123,7 @@ ul {
     .grid__item{
         flex-basis: 23%;
     }
-    .conteiner{
+    .container{
         width: 70%;
     }
 }
