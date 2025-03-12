@@ -4,12 +4,12 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Сайт на Pug
-    link(rel="stylesheet", href="../css/style.css")
+    link(rel="stylesheet", href="scss/style.scss")
   body 
-    - var games = [{ title : 'Red Dead Redemtion 2', releaseDate: '26 октября 2018 ', image: '../img/redDead.jpg' },{ title : 'Minecraft', releaseDate: '18 ноября 2011', image: '../img/minecraft.jpg' },{ title : 'Roblox', releaseDate: '1 сентября 2006', image: '../img/roblox.jpg' },{ title : 'Prince of Persia: The Lost Crown', releaseDate: '18 января 2024', image: '../img/princeOfPersia.jpg' },{ title : 'Tekken 8', releaseDate: '26 января 2024', image: '../img/tekken.jpg' },{ title : 'Slavania', releaseDate: '14 марта 2024', image: '../img/slavania.jpg' },{ title : 'Nine Sols', releaseDate: '29 мая 2024', image: '../img/nineSols.jpg' }];
+    - var games = [{ title : 'Red Dead Redemtion 2', releaseDate: '26 октября 2018 ', image: 'img/redDead.jpg' },{ title : 'Minecraft', releaseDate: '18 ноября 2011', image: 'img/minecraft.jpg' },{ title : 'Roblox', releaseDate: '1 сентября 2006', image: 'img/roblox.jpg' },{ title : 'Prince of Persia: The Lost Crown', releaseDate: '18 января 2024', image: 'img/princeOfPersia.jpg' },{ title : 'Tekken 8', releaseDate: '26 января 2024', image: 'img/tekken.jpg' },{ title : 'Slavania', releaseDate: '14 марта 2024', image: 'img/slavania.jpg' },{ title : 'Nine Sols', releaseDate: '29 мая 2024', image: 'img/nineSols.jpg' }];
     .container
         h1.title Лучшие игры за 2024 год
-        p.conteiner_text На ПК существует множество увлекательных и популярных игр, которые могут стать любимыми для многих геймеров. Первой игрой, которая часто становится любимой, является популярная многопользовательская игра в жанре "шутера" с элементами стратегии. Но не менее популярными являются игры в жанре "RPG" (ролевые игры), где игроку предоставляется уникальная возможность окунуться в фантастическую вселенную. Также не стоит забывать об играх с открытым миром, где игроку предоставляется свобода действий и исследования. В последнее время стали популярны игры-головоломки, требующие логического мышления и находчивости от игрока.
+        p.container_text На ПК существует множество увлекательных и популярных игр, которые могут стать любимыми для многих геймеров. Первой игрой, которая часто становится любимой, является популярная многопользовательская игра в жанре "шутера" с элементами стратегии. Но не менее популярными являются игры в жанре "RPG" (ролевые игры), где игроку предоставляется уникальная возможность окунуться в фантастическую вселенную. Также не стоит забывать об играх с открытым миром, где игроку предоставляется свобода действий и исследования. В последнее время стали популярны игры-головоломки, требующие логического мышления и находчивости от игрока.
         ul.grid
           each info in games
             li.grid__item
@@ -19,4 +19,6 @@ html(lang="en")
                 h2.card__title
                   a(href='/')=info.title
                 br
-                span.card__date='Дата выпуска: ' + info.releaseDate  
+                span.card__date='Дата выпуска: ' + info.releaseDate
+        
+    script(src='index.js')
