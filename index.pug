@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Сайт на Pug
-    link(rel="stylesheet", href="scss/style.scss")
+    link(rel="stylesheet", href=require(`style.css`))
   body 
     - var games = [{ title : 'Red Dead Redemtion 2', releaseDate: '26 октября 2018 ', image: 'img/redDead.jpg' },{ title : 'Minecraft', releaseDate: '18 ноября 2011', image: 'img/minecraft.jpg' },{ title : 'Roblox', releaseDate: '1 сентября 2006', image: 'img/roblox.jpg' },{ title : 'Prince of Persia: The Lost Crown', releaseDate: '18 января 2024', image: 'img/princeOfPersia.jpg' },{ title : 'Tekken 8', releaseDate: '26 января 2024', image: 'img/tekken.jpg' },{ title : 'Slavania', releaseDate: '14 марта 2024', image: 'img/slavania.jpg' },{ title : 'Nine Sols', releaseDate: '29 мая 2024', image: 'img/nineSols.jpg' }];
     .container
@@ -15,10 +15,10 @@ html(lang="en")
             li.grid__item
               article.card
                 a.card__image
-                  img(src=info.image, alt=info.image)
+                  img(src=require(`/${info.image}`), alt=require(`/${info.image}`))
                 h2.card__title
                   a(href='/')=info.title
                 br
                 span.card__date='Дата выпуска: ' + info.releaseDate
         
-    script(src='index.js')
+    script(src=require("/index.js"))
