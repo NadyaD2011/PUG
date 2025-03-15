@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "pug": "^3.0.3",
     "pug-plugin": "^6.0.0",
     "sass": "^1.85.1",

@@ -23,14 +23,10 @@ module.exports = {
         new PugPlugin({
           pretty: devMode,
           js: {
-            // JS output filename, used if `inline` option is false (defaults)
             filename: '[name].[contenthash].js',
-            //inline: true, // inlines JS into HTML
           },
           css: {
-            // CSS output filename, used if `inline` option is false (defaults)
             filename: '[name].[contenthash].css',
-            //inline: true, // inlines CSS into HTML
           },
         })
       ],
