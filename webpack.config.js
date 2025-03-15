@@ -1,9 +1,5 @@
-const { generatePrimeSync } = require("crypto");
-const { type } = require("os");
 const path = require("path");
 const PugPlugin = require('pug-plugin');
-const loader = require("sass-loader");
-const { Generator } = require("webpack");
 
 const mode = process.env.NODE_ENV || "development" ;
 
