@@ -20,8 +20,8 @@ module.exports = {
         index: path.resolve(__dirname, 'index.pug')
     },
     output: {
-        path: path.resolve(__dirname, 'progect'),
-        clear: true,
+        path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
     plugins: [
         new PugPlugin({
