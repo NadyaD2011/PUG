@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "css-loader": "^7.1.2",
     "node-sass": "^9.0.0",
     "pug": "^3.0.3",
     "pug-plugin": "^4.0.0",
